@@ -1,12 +1,12 @@
 import requests
 import smtplib
 
-my_email = "pythonuserhabip@gmail.com"
-password = "zmvhkvlxiinovaec"
+my_email = "YOUR E-MAİL ADDRESS"
+password = "YOUR PASSWORD"
 
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.8/onecall"
-api_key = "fc56b905e2496f17a8e5ecfc0986eba6"
+api_key = "YOUR APİ KEY"
 
 weather_params = {
      "lat": -36.848461,
@@ -33,6 +33,6 @@ if will_rain:
         connection.starttls()
         connection.login(my_email, password)
         connection.sendmail(from_addr=my_email,
-                            to_addrs="habip1834@gmail.com",
+                            to_addrs="MAIL ADDRESS YOU WISH TO SEND",
                             msg=f"Subject:Weather!\n\nIt's rainy today, don't forget your umbrella"
                             )
